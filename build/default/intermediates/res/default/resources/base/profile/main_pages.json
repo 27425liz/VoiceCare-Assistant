@@ -1,0 +1,10 @@
+{
+  "src": [
+
+    "pages/Login",
+    "pages/Home",
+    "pages/TTS",
+    "pages/STT",
+    "pages/Settings"
+  ]
+}
