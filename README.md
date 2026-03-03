@@ -6,74 +6,36 @@
 ![API Version](https://img.shields.io/badge/API-9+-green)
 ![License](https://img.shields.io/badge/License-MIT-orange)
 
+# 鸿蒙AI助手 - HarmonyOS AI Assistant
 
-### 🎯 目标用户
-- 老年人（视力下降、操作不便）
-- 视障人士
-- 需要语音辅助的各类用户
+## 🛠️ 技术栈
+- **前端**：HarmonyOS (ArkTS, ArkUI)
+- **后端**：Spring Boot / Java
+- **数据库**：MySQL / Redis
+- **AI能力**：通义千问API / ChatGPT API
+- **特色功能**：JWT鉴权、流式输出、对话历史
 
-## ✨ 核心功能
+## 🚀 核心功能
+- ✅ 用户注册与登录（Token鉴权）
+- ✅ AI智能问答（流式输出）
+- ✅ 对话历史管理
+- ✅ 异常处理与加载动画
 
-### 🗣️ 文本转语音 (TTS)
-- 输入文本自动转换为语音播报
-- 智能分段处理长文本
-- 支持语速、音量、音色调节
-- 暂停/继续/停止播放控制
+## 🧠 项目亮点与难点解决
+1. **AI响应优化**：针对AI接口响应慢的问题，实现了流式输出，提升用户体验
+2. **状态管理**：在HarmonyOS中管理登录状态和对话上下文
+3. **错误处理**：完善的异常捕获机制，API调用失败时给予友好提示
 
-### 🎤 语音转文本 (STT)
-- 实时语音识别与命令控制
-- 内置常用语音命令（"打开首页"、"打电话"等）
-- 识别历史记录保存
-- 语音命令智能解析
+## 🔧 如何运行
+1. 下载本项目到本地
+2. 用DevEco Studio打开
+3. 配置API密钥（在`entry/src/main/ets/common/Constants.ets`中）
+4. 运行到模拟器或真机
 
-### 🆘 紧急呼救系统
-- 一键拨打紧急联系人
-- 自动发送求助短信
-- 多重确认防止误触
-- 联系人便捷管理
+## 📝 待改进
+- 增加本地数据库存储对话历史
+- 优化UI动画效果
+- 支持多轮对话上下文理解
 
-### ⚙️ 个性化设置
-- 语音参数定制（语速1-5档）
-- 无障碍设置（字体大小16-24sp）
-- 高对比度模式
-- 语音引导开关
-
-### 🔍 快捷功能
-- 实时时间/日期显示
-- 常用短语快捷按钮
-- 使用帮助语音引导
-
-## 🏗️ 项目结构
-VoiceCare-Assistant/
-├── entry/
-│ └── src/
-│ └── main/
-│ ├── ets/
-│ │ ├── pages/ # 页面文件
-│ │ │ ├── Login.ets # 登录/欢迎页
-│ │ │ ├── Home.ets # 主页面
-│ │ │ ├── TTS.ets # 文本转语音
-│ │ │ ├── STT.ets # 语音转文本
-│ │ │ └── Settings.ets # 设置页面
-│ │ ├── service/ # 服务层
-│ │ │ ├── TTSManager.ts # TTS管理
-│ │ │ └── STTManager.ts # STT管理
-│ │ ├── utils/ # 工具类
-│ │ │ ├── Emergency.ts # 紧急呼救
-│ │ │ └── SpeechUtil.ts # 语音工具
-│ │ └── model/ # 数据模型
-│ │ └── LocalStorageManager.ts
-│ └── resources/ # 资源文件
-
-## 🚀 快速开始
-
-### 环境要求
-- DevEco Studio 3.1+
-- HarmonyOS SDK API 9+
-- Node.js 16+
-技术栈
-开发语言：ArkTS (TypeScript)
-UI框架：HarmonyOS ArkUI 3.0
-语音服务：@kit.CoreSpeechKit
-状态管理：LocalStorage + @StorageProp
-数据持久化：localStorage
+## 📧 联系我
+- 邮箱：2875787830@qq.com
